@@ -28,19 +28,21 @@
         <nav class="navigation">
           <ul class="menu list-header">
             <li class="menu-header-li">
-              <a
-                class="menu-item text-decor under-line"
-                href="./index.html"
+              <a class="menu-list text-decor under-line" href="./index.html"
                 >Studio</a
               >
             </li>
             <li class="menu-header-li">
-              <a class="menu-item text-decor under-line" href="./portfolio.html"
+              <a
+                class="menu-list.is-hidden text-decor under-line"
+                href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
             <li class="menu-header-li">
-              <a class="menu-item text-decor under-line" href="">Contacts</a>
+              <a class="menu-list.is-hidden text-decor under-line" href=""
+                >Contacts</a
+              >
             </li>
           </ul>
         </nav>
@@ -65,7 +67,7 @@
       <section class="hero section">
         <div class="container">
           <h1 class="hero-header">Effective Solutions for Your Business</h1>
-          <button class="hero-btn hero-btn-style" type="button">
+          <button class="hero-btn hero-btn-style" type="button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -445,6 +447,15 @@
         </ul>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
